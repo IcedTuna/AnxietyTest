@@ -113,7 +113,7 @@ function createButtons() {
 }
 
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 27; i++) {
   const randomColor = getRandomItem(colors);
   document.getElementById('main').appendChild(createParagraph(randomColor));
   document.getElementById('main').appendChild(createButtons());
@@ -243,5 +243,6 @@ function table() {
     main.appendChild(row);
   }
 }
+
 
 document.getElementById('main').appendChild(createButton2());
