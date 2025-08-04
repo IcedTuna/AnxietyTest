@@ -31,11 +31,10 @@ nav button {
   background: #d2dca1;
   display: flex;
   flex-direction: row; /* desktop: ảnh trái, chữ phải */
-  align-items: center;
+  align-items: flex-start; /* Changed from center to flex-start */
   justify-content: flex-start;
   overflow: hidden; /* tránh tràn layout */
 }
-
 #pic {
   display: block;
   margin: 0;
@@ -45,6 +44,7 @@ nav button {
   width: auto;
   height: auto;
   object-fit: contain;
+  vertical-align: top;
 }
 
 #text-area {
@@ -54,30 +54,29 @@ nav button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  vertical-align: top;
 }
 
-/* Reset chung cho img nếu dùng nhiều ảnh khác */
-img {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-/* Mobile */
 @media (max-width: 768px) {
   #logo {
     flex-direction: column;
-    height: auto; /* tự co giãn */
+    height: auto;
+    align-items: flex-start; /* Changed from center to flex-start */
+    text-align: center;
   }
 
   #pic {
     width: 100%;
     height: auto;
     object-fit: contain;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
   }
 
   #text-area {
-    text-align: center;
+    width: 100%;
     padding: 1rem;
   }
 }
+
