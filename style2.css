@@ -9,8 +9,8 @@ body {
 
 nav {
   display: flex;
-  gap: 10px;
-  padding: 1rem;
+  gap: 10 px;
+  padding: 1 rem;
   background: #333;
 }
 
@@ -18,16 +18,16 @@ nav button {
   position: relative;
   color: #FFFFFF;
   font-family: Times New Roman;
-  font-size: 1rem;
+  font-size: 1 rem;
   background: none;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5 rem 1 rem;
   cursor: pointer;
-  left: 3rem;
+  left: 3 rem;
 }
 
 #logo {
-  height: 100vh;
+  height: 100 vh;
   background: #d2dca1;
   display: flex;
   flex-direction: row; /* desktop: ảnh trái, chữ phải */
@@ -49,7 +49,7 @@ nav button {
 
 #text-area {
   flex: 1;
-  padding: 1rem;
+  padding: 1 rem;
   color: #003a1a;
   display: flex;
   flex-direction: column;
@@ -76,9 +76,10 @@ nav button {
 
   #text-area {
     width: 100%;
-    padding: 1rem;
-    font-size: 1.2rem;
+    padding: 0 rem;
+    font-size: 0.5 rem;
   }
 }
+
 
 
