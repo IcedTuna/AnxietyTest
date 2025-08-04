@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #CCCCFF;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  background: #333;
+}
+
+nav button {
+  position: relative;
+  color: #FFFFFF;
+  font-family: Times New Roman;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  left: 3rem;
+}
+#logo {
+  background-image: linear-gradient(to top, #d9e0a4, #116f59);
+  height:35rem;
+
+  display: flex;
+  flex-direction: column;
+
+}
+#name {
+  color: #d9e0a4;
+  font-family: 'Bahianita Regular';
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  /* hiệu ứng lướt lên */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
