@@ -28,14 +28,13 @@ button.active {
   background-color: crimson !important;
 }
 
-/* --- Di chuyển nhóm nút không bị kéo ra ở máy tính --- */
+/* Giữ nguyên desktop */
 .group {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-/* Giữ nguyên trên desktop */
 .group button {
   width: 50px;
   height: 50px;
@@ -50,30 +49,28 @@ button.active {
   cursor: pointer;
 }
 
-/* --- MOBILE (màn nhỏ hơn 768px) --- */
+/* MOBILE */
 @media (max-width: 768px) {
   .group {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .group div {
     display: flex;
     justify-content: space-between;
+    gap: 0;
     width: 100%;
+    padding: 0;
+  }
+
+  .group span,
+  .group button {
+    flex: 1 1 calc(100% / 7);
+    max-width: calc(100% / 7);
+    text-align: center;
+    font-size: 0.7rem;
+    white-space: normal;
   }
 
   .group button {
-    flex: 1;
-    width: 100%;
-    max-width: none;
-    height: auto;
-    aspect-ratio: 1 / 1; /* luôn vuông */
-    font-size: 1rem;
-  }
-
-  .group span {
-    text-align: center;
-    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: 0;
   }
 }
