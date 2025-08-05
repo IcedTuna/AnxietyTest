@@ -51,6 +51,7 @@ nav button {
   flex: 1;
   padding: 1 rem;
   color: #003a1a;
+  font-size: 1 rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -80,6 +81,7 @@ nav button {
     font-size: 0.5 rem;
   }
 }
+
 
 
 
