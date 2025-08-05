@@ -48,7 +48,7 @@ function createButtons() {
   wrapper.style.display = 'flex';
   wrapper.style.alignItems = 'center';
   wrapper.style.gap = '20px';
-
+  if (window.innerWidth <= 768) wrapper.style.width = '100%';
   const leftA = document.createElement('span');
   leftA.textContent = 'Hoàn toàn không đúng ';
 
@@ -58,6 +58,11 @@ function createButtons() {
   const buttonGroup = document.createElement('div');
   buttonGroup.style.display = 'flex';
   buttonGroup.style.gap = '20px';
+  if (window.innerWidth <= 768) {
+    buttonGroup.style.display = 'flex';
+    buttonGroup.style.justifyContent = 'space-between';
+    buttonGroup.style.width = '100%';
+  }
 
   const buttons = [];
 
@@ -226,5 +231,6 @@ function table() {
     main.appendChild(row);
   }
 }
+
 
 document.querySelector('main').appendChild(createButton2());
