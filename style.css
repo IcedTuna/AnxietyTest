@@ -27,3 +27,53 @@ nav button {
 button.active {
   background-color: crimson !important;
 }
+
+/* --- Di chuyển nhóm nút không bị kéo ra ở máy tính --- */
+.group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Giữ nguyên trên desktop */
+.group button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* --- MOBILE (màn nhỏ hơn 768px) --- */
+@media (max-width: 768px) {
+  .group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .group div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .group button {
+    flex: 1;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 1 / 1; /* luôn vuông */
+    font-size: 1rem;
+  }
+
+  .group span {
+    text-align: center;
+    display: block;
+  }
+}
