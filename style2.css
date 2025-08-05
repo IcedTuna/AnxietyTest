@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #d2dca1;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 0.5rem;
+  background: #7a4c2c;
+}
+p {
+  font-family: 'Neon 80s';
+  font-size: 2rem;
+}
+nav button {
+  position: relative;
+  color: #FFFFFF;
+  font-family: 'Bahianita Regular';
+  font-size: 2rem;
+  background: none;
+  border: none;
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+}
+#right {
+  margin-left: auto;
+}
+#logomini {
+  height: 2.5rem;
+}
+#logomini2 {
+ font-family: 'Bahianita Regular';
+ text-align: center;
+ color:#116f59;
+ font-size: 3rem;
+}
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20rem;
+  background: #f4f4f4;
+  padding: 1rem;
+}
+#logo {
+  height: 100vh;
+  background: #d2dca1;
+  display: flex;
+  flex-direction: row; /* desktop: ảnh trái, chữ phải */
+  align-items: flex-start; /* Changed from center to flex-start */
+  justify-content: flex-start;
+  overflow: hidden; /* tránh tràn layout */
+}
+#pic {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+#text-area {
+  flex: 1;
+  padding: 1rem;
+  color: #003a1a;
+  font-family: 'Neon 80s';
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  nav button,  #text-area {
+    font-size: 1rem;
+  }
+  #logo {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start; /* Changed from center to flex-start */
+    text-align: center;
+  }
+
+  #pic {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  #text-area {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.5rem;
+  }
+}
+

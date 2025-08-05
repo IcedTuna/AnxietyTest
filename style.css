@@ -1,0 +1,130 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #d2dca1;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 0.5rem;
+  background: #7a4c2c;
+}
+
+nav button {
+  position: relative;
+  color: #FFFFFF;
+  font-family: 'Bahianita Regular';
+  font-size: 2rem;
+  background: none;
+  border: none;
+  padding:  0rem 0.5rem;
+  cursor: pointer;
+}
+#right {
+  margin-left: auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+p {
+  font-family: 'Neon 80s';
+  font-size: 2rem;
+}
+
+button {
+  font-family: 'Neon 80s';
+  font-size: 2rem;
+}
+
+button.active {
+  background-color: crimson !important;
+}
+#logomini2 {
+ font-family: 'Bahianita Regular';
+ text-align: center;
+ color:#116f59;
+ font-size: 3rem;
+}
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20rem;
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+#logomini {
+  height: 2.5rem;
+}
+/* Giữ nguyên desktop */
+.group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.group button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.group span {
+  font-family: 'Neon 80s';
+  font-size: 1.5rem;
+
+}
+
+/* MOBILE - Chỉnh sửa cho điện thoại */
+@media (max-width: 768px) {
+  nav button,  button {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .group {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .group span,
+  .group button {
+    flex: 1;
+    text-align: center;
+    font-size: 0.9rem; /* Tăng kích thước chữ */
+    white-space: normal;
+    width: 60px; /* Tăng kích thước đồng đều */
+    height: 60px; /* Duy trì tỷ lệ 1:1 */
+    aspect-ratio: 1 / 1; /* Đảm bảo tỷ lệ 1:1 */
+    border-radius: 50%;
+    padding: 0;
+    box-sizing: border-box; /* Đảm bảo padding không làm lệch */
+  }
+
+  .group button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+}
