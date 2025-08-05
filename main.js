@@ -49,26 +49,18 @@ function createButtons() {
   wrapper.style.alignItems = 'center';
   wrapper.style.gap = '20px';
   if (window.innerWidth <= 768) wrapper.style.width = '100%';
+
   const leftA = document.createElement('span');
   leftA.textContent = 'Hoàn toàn không đúng ';
 
   const rightA = document.createElement('span');
   rightA.textContent = 'Hoàn toàn đúng ';
 
-  const buttonGroup = document.createElement('div');
-  buttonGroup.style.display = 'flex';
-  buttonGroup.style.gap = '20px';
-  if (window.innerWidth <= 768) {
-    buttonGroup.style.display = 'flex';
-    buttonGroup.style.justifyContent = 'space-between';
-    buttonGroup.style.width = '100%';
-  }
-
   const buttons = [];
 
   for (let i = 0; i < 5; i++) {
     const btn = document.createElement('button');
-    btn.dataset.value = i + 1; // gán giá trị để lấy sau
+    btn.dataset.value = i + 1;
     btn.style.width = '50px';
     btn.style.height = '50px';
     btn.style.borderRadius = '50%';
@@ -87,12 +79,12 @@ function createButtons() {
     });
 
     buttons.push(btn);
-    buttonGroup.appendChild(btn); // đúng
+    wrapper.appendChild(btn);
   }
 
-  wrapper.appendChild(leftA);
-  wrapper.appendChild(buttonGroup);
-  wrapper.appendChild(rightA);
+  // span cũng thêm vào wrapper, cùng cấp
+  wrapper.insertBefore(leftA, wrapper.firstChild);  // span trái
+  wrapper.appendChild(rightA);                      // span phải
 
   return wrapper;
 }
@@ -234,3 +226,4 @@ function table() {
 
 
 document.querySelector('main').appendChild(createButton2());
+
