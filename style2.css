@@ -79,6 +79,9 @@ nav button {
 }
 
 @media (max-width: 768px) {
+  #logomini2 {
+    font-size: 2rem;
+  }
   nav button,  #text-area {
     font-size: 1rem;
   }
@@ -104,4 +107,5 @@ nav button {
     font-size: 0.5rem;
   }
 }
+
 
