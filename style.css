@@ -90,6 +90,9 @@ button.active {
 
 /* MOBILE - Chỉnh sửa cho điện thoại */
 @media (max-width: 768px) {
+  #logomini2 {
+    font-size: 1.8rem;
+  }
   nav button,  button {
     font-size: 1rem;
   }
@@ -127,4 +130,5 @@ button.active {
     border: none;
     cursor: pointer;
   }
+
 }
