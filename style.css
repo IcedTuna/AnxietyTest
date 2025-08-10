@@ -198,6 +198,12 @@ button.active {
   #write {
     flex-direction: column;
   }
+
+  .information {
+  width: 50%;
+  height: auto;
+  }
+  
   .information:first-child {
     order: 2;
   }
@@ -207,3 +213,4 @@ button.active {
 
   }
 }
+
