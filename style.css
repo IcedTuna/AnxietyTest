@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #d2dca1;
+}
+
+@font-face {
+    font-family: 'Bahianita Regular';
+    src: url('Bahianita-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neon 80s';
+    src: url('Neon80s.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url('Oswald-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'White Sugar Regular';
+    src: url('White-Sugar.ttf') format('truetype');
+}
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 0.5rem;
+  background: #7a4c2c;
+}
+
+nav button {
+  position: relative;
+  color: #FFFFFF;
+  font-family: 'Oswald Regular';
+  font-size:1.5rem;
+  background: none;
+  border: none;
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+}
+
+#right {
+  margin-left: auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+p {
+  font-family: 'Neon 80s';
+  font-size: 2rem;
+}
+
+button {
+  font-family: 'Neon 80s';
+  font-size: 2rem;
+}
+
+button.active {
+  background-color: crimson !important;
+}
+
+#logomini2 {
+ font-family: 'Bahianita Regular';
+ text-align: center;
+ color:#116f59;
+ font-size: 3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  justify-content: space-between;
+  height: auto;
+  background: #f4f4f4;
+  padding: 1rem;
+}
+.information {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: center; 
+  gap: 1rem;            
+  text-align: center;
+  padding: 1rem;
+}
+
+#logomini {
+  height: 2.5rem;
+}
+
+#logo {
+  height: 100vh;
+  background: #d2dca1;
+  display: flex;
+  flex-direction: row; /* desktop: ảnh trái, chữ phải */
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+#pic {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+#text-area {
+  flex: 1;
+  padding: 1rem;
+  color: #003a1a;
+  font-family: 'Neon 80s';
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  vertical-align: top;
+}
+
+/* Giữ nguyên desktop cho .group */
+.group {
+    position: relative;
+}
+
+.group input {
+    font-size: 1rem; /* 16px */
+    padding: 0.625rem; /* 10px */
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 0.0625rem solid #ccc; /* 1px */
+}
+
+.group label {
+    font-size: 1rem;
+    position: absolute;
+    pointer-events: none;
+    left: 0.625rem; /* 10px */
+    top: 0.625rem;
+    transition: 0.2s ease all;
+}
+.group span {
+  font-family: 'Neon 80s';
+  font-size: 2rem;
+}
+.group input:focus ~ label,
+.group input:valid ~ label {
+    top: -0.75rem; /* 12px */
+    font-size: 0.75rem; /* 12px */
+    color: #5264AE;
+}
+
+.group .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.group .bar:before,
+.group .bar:after {
+    content: '';
+    height: 0.125rem; /* 2px */
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+}
+
+.group .bar:before {
+    left: 50%;
+}
+
+.group .bar:after {
+    right: 50%;
+}
+
+.group input:focus ~ .bar:before,
+.group input:focus ~ .bar:after {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+  .group {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0;
+  }
+  #Advantages {
+    padding-left: 1rem; 
+    padding-right: 1rem;
+  }
+  #logo {
+    flex-direction: column;
+  }
+  #write {
+    flex-direction: column;
+  }
+  .information {
+    width: 100%; /* override cho mobile */
+    padding:0.5rem;
+  }
+  .information:first-child {
+    order: 2;
+  }
+  .information:last-child {
+    order: 1;
+  }
+}
