@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #d2dca1;
+  background: blue;
 }
 
 @font-face {
@@ -224,6 +224,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
