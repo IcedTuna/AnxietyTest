@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: red;
+  background: #d2dca1;
 }
 
 @font-face {
@@ -205,7 +205,6 @@ button.active {
     padding: 0;
   }
   #Advantages {
-    background: red;
     padding: 1rem;
   }
   #logo {
@@ -225,6 +224,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
