@@ -88,6 +88,11 @@ button.active {
   padding: 1rem;
 }
 
+.heading {
+  text-align: center;
+  font-family: 'White Sugar Regular';
+  font-size: 3.5rem;
+}
 #logomini {
   height: 2.5rem;
 }
@@ -220,3 +225,4 @@ button.active {
     order: 1;
   }
 }
+
