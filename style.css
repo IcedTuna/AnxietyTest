@@ -219,6 +219,7 @@ button.active {
   }
   #write {
     flex-direction: column;
+    padding:1rem;
   }
   .information {
     width: 100%;
@@ -230,6 +231,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
