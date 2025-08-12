@@ -94,18 +94,6 @@ button.active {
   font-size: 3.5rem;
 }
 
-.video-wrapper {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-  aspect-ratio: 16 / 9; /* tỉ lệ video */
-}
-.video-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 #logomini {
   height: 2.5rem;
 }
@@ -211,6 +199,9 @@ button.active {
     html {
         font-size: 60%;
     }
+  .video {
+    width: 100%;
+  }
   .group {
     display: flex;
     justify-content: space-between;
@@ -238,6 +229,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
