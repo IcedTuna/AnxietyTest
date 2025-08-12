@@ -221,9 +221,7 @@ button.active {
     flex-direction: column;
   }
   .information {
-    width: 100%; /* override cho mobile */
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100%;
   }
   .information:first-child {
     order: 2;
@@ -232,6 +230,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
