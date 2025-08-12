@@ -205,7 +205,7 @@ button.active {
     padding: 0;
   }
   #Advantages {
-    padding: 1rem;
+    padding: 1rem !important;
   }
   #logo {
     flex-direction: column;
@@ -224,6 +224,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
