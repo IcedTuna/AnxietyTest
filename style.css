@@ -196,7 +196,7 @@ button.active {
 
 @media (max-width: 768px) {
     html {
-        font-size: 50%;
+        font-size: 75%;
     }
   .group {
     display: flex;
@@ -205,7 +205,7 @@ button.active {
     padding: 0;
   }
   #Advantages {
-    padding: 1rem !important;
+    padding: 1.5rem !important;
   }
   #logo {
     flex-direction: column;
@@ -215,7 +215,7 @@ button.active {
   }
   .information {
     width: 100%; /* override cho mobile */
-    padding:0.5rem;
+    padding:1.5rem;
   }
   .information:first-child {
     order: 2;
@@ -224,6 +224,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
