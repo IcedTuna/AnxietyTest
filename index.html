@@ -38,10 +38,13 @@
     <main> 
 <!-- 1 -->
       <div style="padding:1rem; text-align: center; background: white;">
-        <video loop autoplay controls style="width: 50%;">
-          <source src="https://drive.google.com/uc?export=download&id=1FOOM2_ljp8OQRgn0YFaxaQku8rY41H8_" type="video/mp4">
-          Trình duyệt của bạn không hỗ trợ video.
-        </video>
+          <div class="video-wrapper" style="text-align: center;">
+            <iframe
+              src="https://drive.google.com/file/d/1FOOM2_ljp8OQRgn0YFaxaQku8rY41H8_/preview?autoplay=1&loop=1&controls=1" 
+              allow="autoplay; encrypted-media" 
+              allowfullscreen>
+            </iframe>
+          </div>
       </div>
 <!-- 2 -->
       <div class="contact" id="write">
@@ -121,6 +124,7 @@ Tại đây, mình sẽ cùng bạn tìm hiểu về bản chất của lo âu, 
   <script src="main.js"></script>
 </body>
 </html>
+
 
 
 
