@@ -196,7 +196,7 @@ button.active {
 
 @media (max-width: 768px) {
     html {
-        font-size: 75%;
+        font-size: 60%;
     }
   .group {
     display: flex;
@@ -215,7 +215,8 @@ button.active {
   }
   .information {
     width: 100%; /* override cho mobile */
-    padding:1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .information:first-child {
     order: 2;
@@ -224,6 +225,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
