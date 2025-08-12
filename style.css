@@ -200,7 +200,10 @@ button.active {
         font-size: 60%;
     }
   .video {
-    width: 100%;
+    width: 100% !important;
+    height: auto;
+    max-width: 100%;
+    display: block;
   }
   .group {
     display: flex;
@@ -229,6 +232,7 @@ button.active {
     order: 1;
   }
 }
+
 
 
 
