@@ -250,6 +250,13 @@ const pages = [];
 for (let i = 7; i <= 20; i++) {
   pages.push(`Brochure/${i}.png`);
 }
+const preloadedImages = [];
+
+pages.forEach(src => {
+  const img = new Image();
+  img.src = src;
+  preloadedImages.push(img);
+});
 
 let current = 0;
 const img = document.getElementById("flipImage");
@@ -291,5 +298,6 @@ function nextPage() {
     showPage();
   }
 }
+
 
 createDots();
