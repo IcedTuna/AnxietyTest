@@ -117,6 +117,9 @@ for (let i = 0; i < 27; i++) {
 }
 
 function result() {
+  const index = Math.floor(Math.random() * 50);
+  const quoteImg = new Image();
+  quoteImg.src = `quote/${index}.png`;
   const groups = document.querySelectorAll('.group');
   let total = 0;
 
@@ -161,6 +164,7 @@ function result() {
   const P3 = document.createElement('p');
   P3.textContent = anxietyDescriptions[a];
   container.appendChild(P3);
+  document.querySelector('main').appendChild(quoteImg);
   document.querySelector('main').appendChild(container);
   document.querySelector('main').appendChild(createButton3());
 }
@@ -301,3 +305,4 @@ function nextPage() {
 
 
 createDots();
+
