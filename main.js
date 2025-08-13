@@ -114,7 +114,7 @@ for (let i = 0; i < 27; i++) {
 
 
 
-function result() {
+function result(e) {
   const index = Math.floor(Math.random() * 50);
   const quoteImg = new Image();
   quoteImg.src = `quote/${index}.png`;
@@ -126,11 +126,12 @@ function result() {
   for (const group of groups) {
     const selected = group.querySelector('.active');
     if (!selected) {
-      alert('Bạn chưa chọn đầy đủ trong một số nhóm!');
+      alert('Bạn chưa chọn đầy đủ một số câu hỏi!');
       return;
     }
     total += parseInt(selected.dataset.value);
   }
+  e.target.style.display = 'none';
   const container = document.createElement('div');
   container.style.display = 'flex';
   container.style.gap = '20px';
@@ -172,7 +173,9 @@ function result() {
 function createButton2() {
   const btn = document.createElement('button');
   btn.textContent = "Gửi Kết Quả";
-  btn.addEventListener("click", result, { once: true });
+  btn.addEventListener("click", function(e) {
+    result(e);
+  });
   btn.style.cursor = 'pointer';
   return btn;
 }
@@ -303,5 +306,6 @@ function nextPage() {
     showPage();
   }
 }
+
 
 createDots();
