@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #d2dca1;
+  background: #c5d87f;
 }
 
 @font-face {
@@ -195,10 +195,19 @@ button.active {
     width: 50%;
 }
 
+.quote-img {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
-    html {
+  html {
         font-size: 60%;
     }
+  .quote-img {
+    max-width: 100%;
+    height: auto; /* giữ tỷ lệ */
+  }
   .video {
     width: 100% !important;
     height: auto;
@@ -219,7 +228,7 @@ button.active {
   }
   #write {
     flex-direction: column;
-    padding:1rem;
+    padding:1rem !important;
   }
   .information {
     width: 100%;
